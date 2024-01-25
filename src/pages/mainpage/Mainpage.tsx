@@ -1,7 +1,8 @@
 import React from "react";
+import CardContainer from "../../components/mainpage/CardContainer/CardContainer";
 
 const Mainpage = () => {
-  return <div>Mainpage</div>;
+  return <CardContainer />;
 };
 
 export default Mainpage;

@@ -6,7 +6,7 @@ export const CardContainer = styled.div`
   display: flex;
   padding: 32px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   /* gap: 10px; */
   flex-shrink: 0;

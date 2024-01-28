@@ -6,7 +6,7 @@ export const LocationBox = styled.div`
   flex-direction: column;
   width: 450px;
   height: 100px;
-  padding: 16px;
+  padding: 16px 0 16px 0;
   padding-top: 0px;
   justify-content: space-between;
   align-items: flex-start;

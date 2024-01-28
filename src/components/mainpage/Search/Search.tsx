@@ -30,12 +30,14 @@ function Search() {
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
       />
-      <span>최근 검색 지역</span>
-      <S.TagConatainer>
-        {tags.map((tag, index) => (
-          <Tag key={index} text={tag} onDelete={() => deleteTag(index)} />
-        ))}
-      </S.TagConatainer>
+      <div>
+        <S.LocationText>최근 검색 지역</S.LocationText>
+        <S.TagConatainer>
+          {tags.map((tag, index) => (
+            <Tag key={index} text={tag} onDelete={() => deleteTag(index)} />
+          ))}
+        </S.TagConatainer>
+      </div>
     </S.Container>
   );
 }

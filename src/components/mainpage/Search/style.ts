@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import search from "../../../assets/Icon/search.svg";
 import xButton from "../../../assets/button/xButton.svg";
 
@@ -6,9 +6,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  justify-content: center;
+  justify-content: space-around;
   width: 490px;
   height: 214px;
+  padding: 20px 0 10px 30px;
   flex-shrink: 0;
   background-color: #c6d4e4;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
@@ -46,7 +47,7 @@ export const Input = styled.input.attrs({
 export const TagConatainer = styled.div`
   padding: 8px 0px;
   gap: 10px;
-  background-color: red;
+  /* background-color: red; */
   overflow-x: scroll;
   white-space: nowrap;
 
@@ -98,4 +99,14 @@ export const XButton = styled.button`
   background-color: #f6f9ff;
   border: none;
   margin-left: 4px;
+`;
+
+export const LocationText = styled.span`
+  color: #6a728a;
+  /* text-align: right; */
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 `;

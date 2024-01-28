@@ -1,6 +1,6 @@
 import React from "react";
 import CardContainer from "../../components/mainpage/CardContainer/CardContainer";
-import Search from "../../components/mainpage/Search/Search";
+import Search from "../../components/mainpage/SearchContainer/Search";
 
 const Mainpage = () => {
   return (

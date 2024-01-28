@@ -9,6 +9,8 @@ function SortOption() {
   };
   return (
     <S.OptionContainer>
+      <p>일주일 제보수</p>
+      <p>거리순</p>
       <S.RecentOption
         selected={selectedOption === "recent"}
         onClick={() => handleButtonClick("recent")}

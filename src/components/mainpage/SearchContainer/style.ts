@@ -109,4 +109,5 @@ export const LocationText = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-left: 10px;
 `;

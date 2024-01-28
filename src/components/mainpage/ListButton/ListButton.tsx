@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as S from "./style";
 
 const ListButton = () => {
-  const [selectedButton, setSelectedButton] = useState("list");
+  const [selectedButton, setSelectedButton] = useState("find");
 
   const handleButtonClick = (buttonName: string) => {
     setSelectedButton(buttonName);
@@ -11,16 +11,16 @@ const ListButton = () => {
   return (
     <S.BoxContainer>
       <S.ListButton
-        selected={selectedButton === "list"}
-        onClick={() => handleButtonClick("list")}
+        selected={selectedButton === "find"}
+        onClick={() => handleButtonClick("find")}
       >
-        전체 목록
+        찾아요
       </S.ListButton>
       <S.PostButton
-        selected={selectedButton === "post"}
-        onClick={() => handleButtonClick("post")}
+        selected={selectedButton === "report"}
+        onClick={() => handleButtonClick("report")}
       >
-        글 등록하기
+        제보해요
       </S.PostButton>
     </S.BoxContainer>
   );

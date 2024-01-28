@@ -12,21 +12,25 @@ export const BoxContainer = styled.div`
 `;
 
 const buttonStyle = css`
-  width: 224.508px;
-  height: 55px;
-  flex-shrink: 0;
+  display: inline-flex;
+  padding: 14px 30px;
   border-radius: 10px;
-  color: white;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 20px;
 `;
 
 export const ListButton = styled.button<ButtonProps>`
   ${buttonStyle}
-  border-radius: 10px 0px 0px 10px;
-  background-color: ${(props) => (props.selected ? "#34446D" : "#BABABA")};
+  background-color: ${(props) => (props.selected ? "#D4E9FF" : "#E0E5EF")};
+  color: ${(props) => (props.selected ? "#007aff" : "#9BA1B4")};
 `;
 
 export const PostButton = styled.button<ButtonProps>`
   ${buttonStyle}
-  border-radius: 0px 10px 10px 0px;
-  background-color: ${(props) => (props.selected ? "#34446D" : "#BABABA")};
+  background-color: ${(props) => (props.selected ? "#FFF1D7" : "#E0E5EF")};
+  color: ${(props) => (props.selected ? "#FF9900" : "#9BA1B4")};
 `;

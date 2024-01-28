@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import search from "../../../assets/Icon/search.svg";
+import xButton from "../../../assets/button/xButton.svg";
 
 export const Container = styled.div`
   display: flex;
@@ -61,7 +62,7 @@ export const Tag = styled.div`
   padding: 8px 12px;
   margin: 4px;
   font-size: 14px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
   background: #f6f9ff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -84,4 +85,17 @@ export const Tag = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
   }
+`;
+
+export const XButton = styled.button`
+  /* background: url(${xButton}); */
+
+  background: #fff url(${xButton}) no-repeat center;
+  background-size: 10px;
+
+  width: 14px;
+  height: 14px;
+  background-color: #f6f9ff;
+  border: none;
+  margin-left: 4px;
 `;

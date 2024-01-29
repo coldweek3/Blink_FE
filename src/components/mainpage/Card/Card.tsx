@@ -1,5 +1,6 @@
 import React from "react";
 import * as S from "./style";
+import CardInnerImage from "./CardInnerImage";
 
 const Card = () => {
   function handleButtonClick() {
@@ -8,16 +9,18 @@ const Card = () => {
 
   return (
     <S.CardBox>
-      <S.ButtonContainer>
+      <CardInnerImage />
+      {/* <S.ButtonContainer>
         <S.ButtonPrimary onClick={handleButtonClick}>진행 중</S.ButtonPrimary>
         <S.ButtonSecondary onClick={handleButtonClick}>
           찾아요
         </S.ButtonSecondary>
-      </S.ButtonContainer>
-      <S.Content>
-        인생이 힘들다
-        <br />전 인생이 뭔지 모르겠어요..
-      </S.Content>
+      </S.ButtonContainer> */}
+      <S.ContentTitle>인생이 힘들다</S.ContentTitle>
+      <S.ContentInfoContainer>
+        <S.ContentInfoText>2024.01.30 | 조회 2,000</S.ContentInfoText>
+        <S.ContentInfoText>내 위치에서 2.1km</S.ContentInfoText>
+      </S.ContentInfoContainer>
     </S.CardBox>
   );
 };

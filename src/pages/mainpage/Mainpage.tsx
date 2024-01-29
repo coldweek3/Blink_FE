@@ -4,10 +4,10 @@ import Search from "../../components/mainpage/SearchContainer/Search";
 
 const Mainpage = () => {
   return (
-    <>
+    <div>
       <Search />
-      <CardContainer />; // 여기엔 구글맵 컴포넌트가 들어갈 예정
-    </>
+      <CardContainer />
+    </div>
   );
 };
 

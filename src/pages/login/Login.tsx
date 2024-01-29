@@ -1,8 +1,8 @@
 import React from "react";
 import * as S from "./style";
-import LoginSignUp from "../../components/login/LoginSignUp";
-import LoginSection from "../../components/login/LoginSection";
-import SocialLogin from "../../components/login/SocialLogin";
+import LoginSignUp from "../../components/login/login/LoginSignUp";
+import LoginSection from "../../components/login/login/LoginSection";
+import SocialLogin from "../../components/login/login/SocialLogin";
 
 const Login = () => {
   return (

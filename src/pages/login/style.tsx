@@ -12,7 +12,11 @@ export const LoginWrapper = styled.div`
 export const RightWrapper = styled.div`
   flex: 1;
 `;
+export const RowWrapper = styled.div`
+  display: flex;
+`;
 export const SignUpWrapper = styled.div`
+  flex: 1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -67,4 +71,58 @@ export const SignupBtn = styled.button<bgColorProps>`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+`;
+export const MainTxt50 = styled(MainTxt60)`
+  font-size: 50px;
+`;
+export const InfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+`;
+export const PersonalInfo = styled.input`
+  width: 940px;
+  height: 101px;
+  padding-left: 50px;
+  border-radius: 15px;
+  border: 0;
+  background: #ecf1f6;
+  font-family: "Noto Sans KR";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  ::placeholder {
+    color: #8999ae;
+  }
+`;
+export const SelectSection = styled.div`
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-family: "Noto Sans KR";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+`;
+export const ExpertSignup = styled(SignupBtn)`
+  position: static;
+  width: 260px;
+  height: 70px;
+  font-size: 28px;
+`;
+export const SmallTxt = styled.div`
+  color: #1b2130;
+  text-align: center;
+  font-family: "Noto Sans KR";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+`;
+export const MoveToExpert = styled.img`
+  width: 146px;
 `;

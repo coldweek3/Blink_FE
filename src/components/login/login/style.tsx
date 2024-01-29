@@ -24,6 +24,7 @@ export const WhiteSubText = styled.div`
   font-size: 28px;
   font-weight: 400;
   text-align: center;
+  line-height: 1.4;
 
   margin-bottom: 48px;
 `;
@@ -53,6 +54,8 @@ export const LoginSectionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  gap: 30px;
 `;
 export const LoginMainTxt = styled.div`
   color: #34446d;
@@ -62,9 +65,9 @@ export const LoginMainTxt = styled.div`
   margin-bottom: 30px;
 `;
 export const LoginInput = styled.input`
-  width: 70%;
-  height: 60px;
-  margin-bottom: 18px;
+  width: 60%;
+  min-width: 500px;
+  height: 90px;
 
   font-family: "Noto Sans KR";
   color: #34446d;
@@ -80,9 +83,9 @@ export const LoginInput = styled.input`
   }
 `;
 export const LoginBtn = styled.button`
-  width: 160px;
-  height: 60px;
-  margin: 30px 0 48px 0;
+  width: 200px;
+  height: 70px;
+  margin: 40px 0;
 
   border-radius: 12px;
   border: 1px solid #3865bf;
@@ -102,9 +105,15 @@ export const SmallTxt = styled.div`
   font-family: "Noto Sans KR";
   font-size: 24px;
   font-weight: 500;
+  margin: 60px 0;
 `;
 export const FlexRow = styled.div`
   display: flex;
-  justify-content: space-around;
-  margin: 50px 0;
+  justify-content: center;
+  gap: 50px;
+  img {
+    width: 284px;
+    height: 74px;
+    flex-shrink: 0;
+  }
 `;

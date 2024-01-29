@@ -1,4 +1,6 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import xButton from "../../../assets/button/xButton.svg";
+import camera from "../../../assets/Icon/camera.svg";
 
 export const CardBox = styled.div`
   display: flex;
@@ -81,20 +83,37 @@ export const InnerImage = styled.img`
   height: auto;
 `;
 
-export const ButtonTopLeft = styled.button`
+export const DefaultButtonStyle = css`
   position: absolute;
+  padding: 8px 20px;
+  gap: 10px;
+  border-radius: 50px;
+  border: 0;
+  margin-bottom: 4px;
+`;
+
+export const ButtonTopLeft = styled.button`
+  ${DefaultButtonStyle}
   top: 10px;
   left: 10px;
+  /* background: black; */
+  color: white;
+  padding-left: 36px;
+  margin-top: 4px;
+
+  background: black url(${camera}) no-repeat left 14px center;
+  background-size: 14px;
 `;
 
 export const ButtonBottomRightFirst = styled.button`
-  position: absolute;
+  ${DefaultButtonStyle}
   bottom: 10px;
   right: 110px;
 `;
 
 export const ButtonBottomRightSecond = styled.button`
-  position: absolute;
+  ${DefaultButtonStyle}
   bottom: 10px;
   right: 10px;
+  background: #f9fcff;
 `;

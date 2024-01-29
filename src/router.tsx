@@ -5,6 +5,10 @@ import Community from "./pages/community/Community";
 import Expert from "./pages/expert/Expert";
 import Mypage from "./pages/mypage/Mypage";
 import NotFound from "./pages/NotFound";
+import Login from "./pages/login/Login";
+import SignUp from "./pages/login/SignUp";
+import GeneralMember from "./pages/login/GeneralMember";
+import ExpertMember from "./pages/login/ExpertMember";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +29,19 @@ const router = createBrowserRouter([
       },
       {
         path: "login",
-        element: <Mainpage />,
+        element: <Login />,
+      },
+      {
+        path: "signup",
+        element: <SignUp />,
+      },
+      {
+        path: "signup/generalMember",
+        element: <GeneralMember />,
+      },
+      {
+        path: "signup/expertMember",
+        element: <ExpertMember />,
       },
       {
         path: "mypage",

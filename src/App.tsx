@@ -14,6 +14,7 @@ const BackGroundColor = styled.div`
 `;
 
 const Wrapper = styled.div`
+  position: relative; /* footer를 고정하기 위함 */
   margin: 0 auto;
   width: 100%;
   flex-grow: 1;
@@ -28,7 +29,9 @@ const Layout = () => {
       {location.pathname !== "/login" && <Nav />}
       <Wrapper>
         <Outlet />
-        {location.pathname !== "/login" && <Footer />}
+        {/* {location.pathname !== "/signup" && <Footer />} */}
+        {location.pathname !== "/login" &&
+          !location.pathname.startsWith("/signup") && <Footer />}
       </Wrapper>
     </BackGroundColor>
   );

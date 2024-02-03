@@ -18,14 +18,20 @@ export const RowWrapper = styled.div`
 export const SignUpWrapper = styled.div`
   flex: 1;
   min-height: 100vh;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+
   background-color: #fff;
   gap: 60px;
 `;
 export const MainTxt60 = styled.div`
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   color: #34446d;
   text-align: center;
   font-family: "Noto Sans KR";
@@ -76,17 +82,21 @@ export const MainTxt50 = styled(MainTxt60)`
   font-size: 50px;
 `;
 export const InfoWrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 26px;
 `;
 export const PersonalInfo = styled.input`
-  width: 940px;
+  width: 85%;
+  min-width: 740px;
   height: 101px;
+
   padding-left: 50px;
   border-radius: 15px;
   border: 0;
+
   background: #ecf1f6;
   font-family: "Noto Sans KR";
   font-size: 28px;

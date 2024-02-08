@@ -3,6 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+export const StyledLink = styled.a`
+  text-decoration: none;
+  outline: none;
+`;
+
 export const ExpertWrapper = styled.div`
   width: 70%;
 `;
@@ -216,6 +221,7 @@ export const ExpertQuestionTitle = styled.div`
 `;
 
 export const ExpertQuestionContainer = styled.div`
+  width: 100%;
   height: 100px;
   background-color: #f0f6ff;
   border-radius: 20px;
@@ -228,12 +234,12 @@ export const ExpertQuestionContainer = styled.div`
 `;
 
 export const ExpertType = styled.div`
-  width: 80px;
+  /* width: 80px; */
   height: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   cursor: pointer;
 `;
 

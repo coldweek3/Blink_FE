@@ -34,6 +34,9 @@ const ExpertQuestion: React.FC = () => {
     localStorage.setItem("selectedExpertType", type);
   };
 
+  // 상태를 출력합니다
+  console.log("selectedExpertType:", selectedExpertType);
+
   return (
     <S.ExpertQuestionWrapper>
       <S.ExpertQuestionTitle>어떤 전문가를 찾으시나요?</S.ExpertQuestionTitle>

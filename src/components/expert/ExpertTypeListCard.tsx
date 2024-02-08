@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from "react";
 import * as S from "./style";
 import ExpertCard from "./ExpertCard";
+import { useRecoilValue } from "recoil";
+import { selectedExpertTypeState } from "../../recoil/expertState";
 
 const ExpertTypeListCard: React.FC = () => {
+  const selectedExpertType = useRecoilValue(selectedExpertTypeState);
   const [expertListTitle, setExpertListTitle] = useState("");
 
   useEffect(() => {
-    const storedTitle = localStorage.getItem("selectedExpertType");
-    if (storedTitle) {
-      setExpertListTitle(storedTitle);
-    }
-  }, [localStorage.getItem("selectedExpertType")]); // 로컬 스토리지의 값이 변경될 때마다 실행되도록 설정
+    // selectedExpertType 상태가 변경될 때마다 expertListTitle 업데이트
+    setExpertListTitle(selectedExpertType);
+  }, [selectedExpertType]);
 
   return (
     <S.ExpertListWrapper>
-      <S.ExpertListTitleContainer>
+      <S.ExpertListTitleContainer marginTop="40px">
         <S.ExpertListTitle>{expertListTitle}</S.ExpertListTitle>
         <S.ExpertListSubtitle> B:Link 전문가</S.ExpertListSubtitle>
       </S.ExpertListTitleContainer>
-      <S.ExpertListCardContainer></S.ExpertListCardContainer>
+      <S.ExpertListCardContainer>
+        {/* <ExpertCard /> */}
+      </S.ExpertListCardContainer>
     </S.ExpertListWrapper>
   );
 };

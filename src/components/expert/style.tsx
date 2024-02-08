@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+// import { StyledComponentProps } from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -91,9 +92,10 @@ export const ExpertListWrapper = styled.div`
   margin-left: 40px;
 `;
 
-export const ExpertListTitleContainer = styled.div`
+export const ExpertListTitleContainer = styled.div<{ marginTop?: string }>`
   display: flex;
   gap: 10px;
+  margin-top: ${(props) => props.marginTop || ""};
 `;
 
 export const ExpertListTitle = styled.div`

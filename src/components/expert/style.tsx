@@ -1,7 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+export const StyledLink = styled.a`
+  text-decoration: none;
+  outline: none;
+`;
 
 export const ExpertWrapper = styled.div`
   width: 70%;
@@ -120,6 +125,7 @@ export const ExpertListCardWrapper = styled.div`
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   width: 90%;
+  background-color: white;
 `;
 
 export const CardSlider = styled(Slider)`
@@ -200,4 +206,52 @@ export const ArrowButton = styled.div`
   /* border: 1px solid red; */
   display: flex;
   width: 100%;
+`;
+
+//ExpertQuestion.tsx
+
+export const ExpertQuestionWrapper = styled.div`
+  margin-top: 10px;
+  margin-left: 40px;
+`;
+
+export const ExpertQuestionTitle = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+`;
+
+export const ExpertQuestionContainer = styled.div`
+  width: 100%;
+  height: 100px;
+  background-color: #f0f6ff;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+`;
+
+export const ExpertType = styled.div`
+  /* width: 80px; */
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+`;
+
+export const ExpertTypeImg = styled.img`
+  width: 40%;
+`;
+
+export const ExpertTypeTitle = styled.div<{ selected: boolean }>`
+  font-size: 15px;
+  ${({ selected }) =>
+    selected &&
+    css`
+      color: #007aff;
+    `}
 `;
